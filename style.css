@@ -1,0 +1,47 @@
+/* ===== CSS Custom Properties ===== */
+:root {
+  --gold: #f5c842;
+  --gold-dark: #d4a800;
+  --cream: #fffbea;
+  --cream-light: #fafaf5;
+  --dark: #1a1a1a;
+  --gray: #666666;
+  --white: #ffffff;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: 'Open Sans', system-ui, -apple-system, sans-serif;
+  --max-width: 1100px;
+  --section-padding: 80px 24px;
+}
+
+/* ===== Reset ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--white);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
