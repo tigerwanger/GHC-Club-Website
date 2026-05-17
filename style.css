@@ -397,3 +397,48 @@ ul {
 .join-btn {
   margin-top: 8px;
 }
+
+/* ===== Contact ===== */
+.contact {
+  background: var(--white);
+}
+
+.contact-body {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-body p {
+  font-size: 1.05rem;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.contact-email {
+  color: var(--gold-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-email:hover {
+  color: var(--dark);
+}
+
+.contact-note {
+  font-size: 0.9rem !important;
+  font-style: italic;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--dark);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 28px 24px;
+  font-size: 0.9rem;
+}
