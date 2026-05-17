@@ -442,3 +442,24 @@ ul {
   padding: 28px 24px;
   font-size: 0.9rem;
 }
+
+/* ===== Global Responsive ===== */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px 20px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
