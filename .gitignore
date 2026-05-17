@@ -1,0 +1,8 @@
+# Brainstorm session files
+.superpowers/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
