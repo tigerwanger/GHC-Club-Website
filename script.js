@@ -1,8 +1,16 @@
+// ===== DOM References =====
+var navHeader = document.getElementById('nav-header');
+var navToggle = document.getElementById('nav-toggle');
+var navLinks = document.getElementById('nav-links');
+
 // ===== Smooth Scroll =====
 // All nav links that point to an anchor (#section) scroll smoothly instead of jumping.
+// The CSS scroll-behavior:smooth handles most cases; this also closes the mobile nav on click.
 document.querySelectorAll('a[href^="#"]').forEach(function (link) {
   link.addEventListener('click', function (e) {
-    var target = document.querySelector(this.getAttribute('href'));
+    var href = this.getAttribute('href');
+    if (!href || href === '#') return;
+    var target = document.querySelector(href);
     if (!target) return;
     e.preventDefault();
     target.scrollIntoView({ behavior: 'smooth' });
@@ -12,8 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
 });
 
 // ===== Sticky Nav Shadow =====
-// Adds a "scrolled" class to the header once the user scrolls past the nav height.
-var navHeader = document.getElementById('nav-header');
+// Adds a "scrolled" class to the header once the user scrolls past 10px.
 window.addEventListener('scroll', function () {
   if (window.scrollY > 10) {
     navHeader.classList.add('scrolled');
@@ -23,9 +30,6 @@ window.addEventListener('scroll', function () {
 });
 
 // ===== Mobile Hamburger Menu =====
-var navToggle = document.getElementById('nav-toggle');
-var navLinks = document.getElementById('nav-links');
-
 navToggle.addEventListener('click', function () {
   navLinks.classList.toggle('open');
 });
