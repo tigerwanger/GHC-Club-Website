@@ -372,3 +372,28 @@ ul {
     gap: 32px;
   }
 }
+
+/* ===== Join ===== */
+.join {
+  background: var(--cream);
+}
+
+.join-body {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.join-body p {
+  font-size: 1.05rem;
+  color: var(--gray);
+  line-height: 1.75;
+}
+
+.join-btn {
+  margin-top: 8px;
+}
